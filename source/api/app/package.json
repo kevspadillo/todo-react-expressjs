@@ -1,0 +1,33 @@
+{
+  "name": "restful-node-express",
+  "version": "1.0.0",
+  "description": "Restful Api using Node and Express JS",
+  "homepage": "https://github.com/kevspadilla/restful-node-express.git",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "execute": "watch 'npm run start' ./core",
+    "dev": "ts-node ./core/server.ts",
+    "start": "tsc && node ./core/server.js",
+    "prod": "npm run build && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kevin Padilla",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.1",
+    "@types/node": "^11.9.5",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.18.10",
+    "reflect-metadata": "^0.1.13",
+    "tslint": "^5.13.0",
+    "typeorm": "^0.2.14",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "watch": "^1.0.2"
+  }
+}
